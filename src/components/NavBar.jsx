@@ -9,8 +9,8 @@ const NavBar = () => {
   return (
         <div className='navBar'>
             <Router>
-                <Link to='signup'>Signup</Link>
-                <Link to='login'>Login</Link>
+                <Link to='/signup'>Signup</Link>
+                <Link to='/login'>Login</Link>
                 <Routes>
                     <Route path='/signup' element={<SignupPage />} />
                     <Route path='/login' element={<LoginPage />} />

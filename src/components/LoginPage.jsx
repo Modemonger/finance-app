@@ -1,10 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
+
+  const validateForm = () => {
+
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
+
   return (
       <div className='logInContainer'>
-        <form className='loginForm'>
+        <form className='loginForm' onSubmit={handleSubmit}>
           <label>
             Email:
             <input type="email" name="userEmail" id="userEmail" />
@@ -15,7 +25,9 @@ const LoginPage = () => {
           </label>
             <button type="submit">Sign in</button>
         </form>
-        <Link to='remindPassword'>Forgot password</Link>
+        <Link to='remindPassword'>Forgot password?</Link>
+        <br />
+        <Link to='../signup'>Dont have an account?</Link>
       </div>
   );
 };
