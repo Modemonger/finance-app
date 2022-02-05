@@ -6,15 +6,18 @@ const initialState = {
     categories:[
         {
             category: 'Food',
-            icon: <GiBellPepper/>
+            icon: <GiBellPepper/>,
+            amount: 0
         },
         {
             category: 'Housing',
-            icon: <GiHouse />
+            icon: <GiHouse />,
+            amount: 0
         },
         {
             category: 'Travel',
-            icon: <GiTreasureMap />
+            icon: <GiTreasureMap />,
+            amount: 0
         }
     ]
 }

@@ -46,7 +46,8 @@ import { CategoryContext } from '../Context/CategoryContext';
 
         addCategory({
             category: newCategory,
-            icon: ''
+            icon: '',
+            amount: 0
         });
 
         setNewCategory('');

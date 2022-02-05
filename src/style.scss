@@ -15,7 +15,8 @@
                 @include center;
                 .userPage{
                     @include center;
-                    flex-direction: column;
+                    flex-direction: row;
+                    flex-wrap: wrap;
                     .userCardContainer{
                         @include center;
                         min-height: 28rem;
@@ -90,6 +91,18 @@
                                 &:hover{
                                     transform: scale(0.9);
                                     box-shadow: $base 0px 4px 16px, $mid 0px 8px 24px, $mid 0px 16px 56px;
+                                }
+                            }
+                        }
+                        .statistics{
+                            @include center;
+                            flex-direction: column;
+                            .statCategory{
+                                @include center;
+                                margin: 1rem 0;
+                                font-size: 20px;
+                                *{
+                                    margin: 0.5rem;
                                 }
                             }
                         }

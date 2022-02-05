@@ -36,10 +36,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 * body #root .App .userPage .userCardContainer {
@@ -183,6 +185,40 @@
           transform: scale(0.9);
   -webkit-box-shadow: #8ed6ff 0px 4px 16px, #ffc1c8 0px 8px 24px, #ffc1c8 0px 16px 56px;
           box-shadow: #8ed6ff 0px 4px 16px, #ffc1c8 0px 8px 24px, #ffc1c8 0px 16px 56px;
+}
+
+* body #root .App .userPage .userCardContainer .statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body #root .App .userPage .userCardContainer .statistics .statCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+  font-size: 20px;
+}
+
+* body #root .App .userPage .userCardContainer .statistics .statCategory * {
+  margin: 0.5rem;
 }
 
 * body #root .App .userPage .entryList {
