@@ -2,11 +2,12 @@ import React from 'react';
 
 import EntryList from './EntryList';
 import InputForm from './InputForm';
-import LoginPage from './LoginPage';
-import NavBar from './NavBar';
+import { CategoryProvider } from '../Context/CategoryContext';
+
 
 const UserPage = () => {
   return (
+        <CategoryProvider>
             <div className='userPage'>
                 <div className='userCardContainer'>
                     <InputForm />
@@ -14,6 +15,7 @@ const UserPage = () => {
                 </div>
                 <EntryList />
             </div>
+        </CategoryProvider>
     );
 };
 

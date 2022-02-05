@@ -1,0 +1,160 @@
+@import 'mixins';
+@import 'variable';
+
+*{
+    margin: 0;
+    padding: 0;
+    body{
+        width: 100vw;
+        min-height: 100vh;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        #root{
+            height: 100%;
+            .App{
+                @include center;
+                .userPage{
+                    @include center;
+                    flex-direction: column;
+                    .userCardContainer{
+                        @include center;
+                        min-height: 28rem;
+                        min-width: 17rem;
+                        background-color: $background;
+                        border-radius: 3rem 3rem 1rem;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        margin: 1rem;
+                        .inputForm{
+                            @include center;
+                            flex-direction: column;
+                            *{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 16rem;
+                                margin: 0.4rem;
+                                font-size: 20px;
+                                *{
+                                    height: 2rem;
+                                    width: 14rem;
+                                    background-color: $mid;
+                                    border: none;
+                                    outline: none;
+                                    justify-content: center;
+                                }
+                            }
+                            .submit{
+                                height: 3rem;
+                                width: 6rem;
+                                text-align: center;
+                                justify-content: center;
+                                background-color: $base;
+                                border: none;
+                                border-radius: 0.5rem 0.5rem 0.2rem;
+                                transition: 50ms;
+                                &:hover{
+                                    transform: scale(0.9);
+                                    box-shadow: $base 0px 4px 16px, $mid 0px 8px 24px, $mid 0px 16px 56px;
+                                }
+                            }
+                        }
+                        .categoryForm{
+                            @include center;
+                            flex-direction: column;
+                            label{
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 20px;
+                                font-weight: bold;
+                                .categoryInput{
+                                    width: 16rem;
+                                    height: 3rem;
+                                    background-color: $mid;
+                                    border: none;
+                                    margin-bottom: 3rem;
+                                    outline: none;
+                                }
+                            }
+                            
+                            .add{
+                                height: 3rem;
+                                width: 12rem;
+                                text-align: center;
+                                justify-content: center;
+                                margin: 1rem;
+                                font-size: 20px;
+                                background-color: $base;
+                                border: none;
+                                border-radius: 0.5rem 0.5rem 0.2rem;
+                                transition: 50ms;
+                                &:hover{
+                                    transform: scale(0.9);
+                                    box-shadow: $base 0px 4px 16px, $mid 0px 8px 24px, $mid 0px 16px 56px;
+                                }
+                            }
+                        }
+                    }
+                    .entryList{
+                        @include center;
+                        font-size: 20px;
+                        
+                        table{
+                            table-layout: fixed;
+                            width: 80%;
+                            border-collapse: collapse;
+                            border: 3px solid $light;
+                            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                            .statistics{
+                                *{
+                                    border: 1px solid $light;
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    height: 3rem;
+                                }
+                            }
+                            tbody tr:nth-child(odd) {
+                                background-color: $base;
+                                button{
+                                    height: 2rem;
+                                    width: 4.5rem;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    background-color: $mid;
+                                    border: none;
+                                    border-radius: 0.5rem;
+                                    transition: 50ms;
+                                    &:hover{
+                                        transform: scale(0.9);
+                                    }
+                                }
+                            }
+                            tbody tr:nth-child(even) {
+                                button{
+                                    height: 2rem;
+                                    width: 4.5rem;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    background-color: $base;
+                                    border: none;
+                                    border-radius: 0.5rem;
+                                    transition: 50ms;
+                                    &:hover{
+                                        transform: scale(0.9);
+
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                    .emptyList{
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
