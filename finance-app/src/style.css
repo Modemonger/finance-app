@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+* body #root {
+  height: 100%;
+}
+
+* body #root .App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body #root .App .userPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* body #root .App .userPage .userCardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 28rem;
+  min-width: 17rem;
+  background-color: #ffcece;
+  border-radius: 3rem 3rem 1rem;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 1rem;
+}
+
+* body #root .App .userPage .userCardContainer .inputForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body #root .App .userPage .userCardContainer .inputForm * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16rem;
+  margin: 0.4rem;
+  font-size: 20px;
+}
+
+* body #root .App .userPage .userCardContainer .inputForm * * {
+  height: 2rem;
+  width: 14rem;
+  background-color: #ffc1c8;
+  border: none;
+  outline: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body #root .App .userPage .userCardContainer .inputForm .submit {
+  height: 3rem;
+  width: 6rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #8ed6ff;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0.2rem;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+
+* body #root .App .userPage .userCardContainer .inputForm .submit:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: #8ed6ff 0px 4px 16px, #ffc1c8 0px 8px 24px, #ffc1c8 0px 16px 56px;
+          box-shadow: #8ed6ff 0px 4px 16px, #ffc1c8 0px 8px 24px, #ffc1c8 0px 16px 56px;
+}
+
+* body #root .App .userPage .userCardContainer .categoryForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body #root .App .userPage .userCardContainer .categoryForm label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+* body #root .App .userPage .userCardContainer .categoryForm label .categoryInput {
+  width: 16rem;
+  height: 3rem;
+  background-color: #ffc1c8;
+  border: none;
+  margin-bottom: 3rem;
+  outline: none;
+}
+
+* body #root .App .userPage .userCardContainer .categoryForm .add {
+  height: 3rem;
+  width: 12rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  font-size: 20px;
+  background-color: #8ed6ff;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0.2rem;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+
+* body #root .App .userPage .userCardContainer .categoryForm .add:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-box-shadow: #8ed6ff 0px 4px 16px, #ffc1c8 0px 8px 24px, #ffc1c8 0px 16px 56px;
+          box-shadow: #8ed6ff 0px 4px 16px, #ffc1c8 0px 8px 24px, #ffc1c8 0px 16px 56px;
+}
+
+* body #root .App .userPage .userCardContainer .statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body #root .App .userPage .userCardContainer .statistics .statCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+  font-size: 20px;
+}
+
+* body #root .App .userPage .userCardContainer .statistics .statCategory * {
+  margin: 0.5rem;
+}
+
+* body #root .App .userPage .entryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+* body #root .App .userPage .entryList table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  border: 3px solid #ffe3b0;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+* body #root .App .userPage .entryList table .statistics * {
+  border: 1px solid #ffe3b0;
+}
+
+* body #root .App .userPage .entryList table tbody tr {
+  height: 3rem;
+}
+
+* body #root .App .userPage .entryList table tbody tr:nth-child(odd) {
+  background-color: #8ed6ff;
+}
+
+* body #root .App .userPage .entryList table tbody tr:nth-child(odd) button {
+  height: 2rem;
+  width: 4.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffc1c8;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+
+* body #root .App .userPage .entryList table tbody tr:nth-child(odd) button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+* body #root .App .userPage .entryList table tbody tr:nth-child(even) button {
+  height: 2rem;
+  width: 4.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #8ed6ff;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+
+* body #root .App .userPage .entryList table tbody tr:nth-child(even) button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+* body #root .App .userPage .emptyList {
+  font-size: 25px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
